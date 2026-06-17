@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM & BOM Practice</title>
+    <style>
+        body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        .highlight { background-color: yellow; }
+        .hidden { display: none; }
+        button { margin: 5px; padding: 8px 14px; cursor: pointer; }
+        input { padding: 6px; margin-right: 8px; }
+        #task-list li { margin: 4px 0; }
+        #color-box { width: 150px; height: 150px; background-color: lightblue; margin: 10px 0; }
+        #counter-display { font-size: 2rem; font-weight: bold; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <!-- Part 1: Selecting & Reading Elements -->
+    <h2>Part 1 — Select & Read</h2>
+    <p id="intro-text">The quick brown fox jumps over the lazy dog.</p>
+    <ul id="fruit-list">
+        <li class="fruit">Apple</li>
+        <li class="fruit">Banana</li>
+        <li class="fruit">Cherry</li>
+    </ul>
+    <button id="btn-read">Run Part 1</button>
+    <p><em>Open the browser console to see results.</em></p>
+
+    <!-- Part 2: Modifying Content & Attributes -->
+    <h2>Part 2 — Modify Content</h2>
+    <h3 id="main-heading">Original Heading</h3>
+    <img id="demo-img" src="https://placebear.com/200/100" alt="A bear" width="200">
+    <br>
+    <button id="btn-modify">Run Part 2</button>
+
+    <!-- Part 3: Styling -->
+    <h2>Part 3 — Styling</h2>
+    <div id="color-box"></div>
+    <button id="btn-style">Change Style</button>
+
+    <!-- Part 4: Creating & Removing Elements -->
+    <h2>Part 4 — Create & Remove</h2>
+    <input type="text" id="task-input" placeholder="Enter a task">
+    <button id="btn-add-task">Add Task</button>
+    <ul id="task-list"></ul>
+
+    <!-- Part 5: Events -->
+    <h2>Part 5 — Events</h2>
+    <div id="counter-display">0</div>
+    <button id="btn-increment">+1</button>
+    <button id="btn-decrement">-1</button>
+    <button id="btn-reset">Reset</button>
+
+    <!-- Part 6: BOM -->
+    <h2>Part 6 — BOM (Browser Object Model)</h2>
+    <button id="btn-window-size">Show Window Size</button>
+    <button id="btn-scroll-top">Scroll to Top</button>
+    <button id="btn-confirm">Confirm Dialog</button>
+    <p id="bom-output"></p>
+
+    <script src="./script.js"></script>
+</body>
+</html>
