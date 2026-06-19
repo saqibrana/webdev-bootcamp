@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS Practice</title>
+    <style>
+        body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        button { margin: 5px; padding: 8px 14px; cursor: pointer; }
+        .output {
+            background: #f4f4f4;
+            border-left: 4px solid #888;
+            padding: 10px 14px;
+            margin: 10px 0;
+            min-height: 40px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .loading { color: #888; font-style: italic; }
+        #user-card { border: 1px solid #ccc; padding: 14px; border-radius: 6px; display: none; margin-top: 10px; }
+        #user-card h3 { margin: 0 0 6px; }
+    </style>
+</head>
+<body>
+
+    <!-- Part 1: Call Stack order -->
+    <h2>Part 1 — Call Stack & Execution Order</h2>
+    <p>Predict what order the console logs will print, then click to check.</p>
+    <button id="btn-order">Run</button>
+    <div class="output" id="output-1"></div>
+
+    <!-- Part 2: setTimeout -->
+    <h2>Part 2 — setTimeout</h2>
+    <p>Click the button. A message should appear after 2 seconds without freezing the page.</p>
+    <button id="btn-timer">Start Timer</button>
+    <div class="output" id="output-2">Waiting...</div>
+
+    <!-- Part 3: Callback chain -->
+    <h2>Part 3 — Callback Chain</h2>
+    <p>Simulate a 3-step process: "Connecting..." → "Loading data..." → "Done!" with 1s between each.</p>
+    <button id="btn-chain">Run Chain</button>
+    <div class="output" id="output-3"></div>
+
+    <!-- Part 4: fetch -->
+    <h2>Part 4 — fetch (Real Async)</h2>
+    <p>Fetch a user from a public API and display their name, email, and city.</p>
+    <button id="btn-fetch">Fetch User</button>
+    <div class="output loading" id="output-4">Press the button to fetch.</div>
+    <div id="user-card">
+        <h3 id="user-name"></h3>
+        <p id="user-email"></p>
+        <p id="user-city"></p>
+    </div>
+
+    <!-- Part 5: Event loop puzzle -->
+    <h2>Part 5 — Event Loop Puzzle</h2>
+    <p>Before clicking, write down on paper what order you think A, B, C, D will print. Then run it.</p>
+    <button id="btn-puzzle">Run Puzzle</button>
+    <div class="output" id="output-5"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
