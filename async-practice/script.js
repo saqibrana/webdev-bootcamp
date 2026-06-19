@@ -97,6 +97,24 @@ document.getElementById("btn-chain").addEventListener("click", function () {
 
 document.getElementById("btn-fetch").addEventListener("click", function () {
     // YOUR CODE HERE
+    let output4 = document.getElementById("output-4");
+    let userCard = document.getElementById("user-card");
+    
+    output4.textContent = "Fetching...";
+    fetch("https://jsonplaceholder.typicode.com/users/1")
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            output4.textContent = `${data.name}\n${data.email}\n${data.address.city}`;
+            document.getElementById("user-name").textContent = data.name;
+            document.getElementById("user-email").textContent = data.email;
+            document.getElementById("user-city").textContent = data.address.city;
+            userCard.style.display = "block";
+        })
+        .catch(function(error) {
+            output4.textContent = "Error fetching data.";
+        });
 
 
 });
@@ -127,6 +145,19 @@ document.getElementById("btn-puzzle").addEventListener("click", function () {
     // YOUR CODE HERE — run the four lines above and also append each
     // letter to #output-5 as it happens so you can see the order on screen.
     // Hint: use output.textContent += "A\n" etc. inside each log.
+
+    console.log("A");
+    output.textContent = "A\n";
+    setTimeout(function() { 
+        console.log("C");
+        output.textContent += "C\n";
+    }, 0); // Even with 0ms C still runs after B, it goes through the queue, 0ms means immediately as soon as the call stack is clear 
+    setTimeout(function() { 
+        console.log("D"); 
+        output.textContent += "D\n";
+    }, 1000);
+    console.log("B");
+    output.textContent += "B\n";
 
 
 });
