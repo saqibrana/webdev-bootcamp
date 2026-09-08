@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures Practice</title>
+    <style>
+        body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; }
+        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        button { margin: 5px; padding: 8px 14px; cursor: pointer; }
+        input { padding: 6px 8px; margin: 5px; }
+        .output {
+            background: #f4f4f4;
+            border-left: 4px solid #888;
+            padding: 10px 14px;
+            margin: 10px 0;
+            min-height: 40px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Part 1: Basic closure -->
+    <h2>Part 1 — A Function Remembers Its Scope</h2>
+    <p>Click the button to see a closure return a greeting built from a variable defined outside it.</p>
+    <button id="btn-greet">Greet</button>
+    <div class="output" id="output-1"></div>
+
+    <!-- Part 2: Counter -->
+    <h2>Part 2 — Independent Counters</h2>
+    <p>Two separate counters, each with its own private count. Clicking one should never affect the other.</p>
+    <button id="btn-counter-a">Counter A++</button>
+    <span id="output-2a">0</span>
+    <br>
+    <button id="btn-counter-b">Counter B++</button>
+    <span id="output-2b">0</span>
+
+    <!-- Part 3: Memoization -->
+    <h2>Part 3 — Memoized Expensive Function</h2>
+    <p>Enter a number and click Compute. The first call for a given number should be slow (simulated); repeat calls with the same number should be instant, using a cached result.</p>
+    <input type="number" id="memo-input" value="5">
+    <button id="btn-memo">Compute</button>
+    <div class="output" id="output-3"></div>
+
+    <!-- Part 4: Module pattern / private state -->
+    <h2>Part 4 — Bank Account (Private Balance via Closure)</h2>
+    <p>Deposit and withdraw should be the only way to change the balance — there is no direct variable to reach in from outside, unlike a plain object property.</p>
+    <input type="number" id="amount-input" value="10">
+    <button id="btn-deposit">Deposit</button>
+    <button id="btn-withdraw">Withdraw</button>
+    <div class="output" id="output-4">Balance: 0</div>
+
+    <!-- Part 5: Closures in loops pitfall -->
+    <h2>Part 5 — The Loop Pitfall</h2>
+    <p>Click to run three setTimeouts (500ms apart) inside a loop from 0 to 2. Predict what prints before you click.</p>
+    <button id="btn-loop">Run Loop</button>
+    <div class="output" id="output-5"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
