@@ -114,7 +114,7 @@ document.getElementById("btn-memo").addEventListener("click", function () {
 //   amount would take the balance below 0.
 //
 // Compare this to Person's #balance-style private fields in
-// js-oops.js — same goal (encapsulation), different mechanism.
+// oop-practice/script.js — same goal (encapsulation), different mechanism.
 
 function createAccount(startingBalance) {
 	// YOUR CODE HERE — return { deposit, withdraw }
