@@ -14,26 +14,15 @@ My practice code and notes from learning full-stack web development.
 Earlier basics (not in separate folders): arrays, loops, functions, type conversion,
 string & math operators, arrow functions, spread operator, template literals.
 
-## Review Schedule
+## How I Review
 
-**How to review (10–15 min):**
+Each topic gets reviewed four times: 1 day, then about 3 days, 1 week and 3 weeks after learning it.
+
 1. Open the topic's **QUIZ.md** first, *not* the notes. Answer each question from memory.
-2. Check the answers. For every one you got wrong, re-read that part of **NOTES.md**.
-3. Harder check: pick one exercise from `script.js`, delete your solution, and rewrite it from scratch.
-4. Replace the date below with ✅ when done.
+2. Check the answers. For every one I got wrong, re-read that part of **NOTES.md**.
+3. Harder check: pick one exercise from `script.js`, delete the solution, and rewrite it from scratch.
 
-The first four topics were finished a while ago, so their schedule restarts from Oct 1.
-They're staggered one day apart so you only review one or two topics a day.
-
-| Topic | Finished | Review 1 | Review 2 (+3d) | Review 3 (+1w) | Review 4 (+3w) |
-|---|---|---|---|---|---|
-| OOP | 2026-06-04 | 2026-10-01 | 2026-10-04 | 2026-10-08 | 2026-10-22 |
-| DOM & BOM | 2026-06-17 | 2026-10-02 | 2026-10-05 | 2026-10-09 | 2026-10-23 |
-| Async JS | 2026-06-19 | 2026-10-03 | 2026-10-06 | 2026-10-10 | 2026-10-24 |
-| Closures | 2026-09-08 | 2026-10-04 | 2026-10-07 | 2026-10-11 | 2026-10-25 |
-
-**When you finish a new topic:** add a row with Review 1 the next day, then +3 days, +1 week and +3 weeks after that.
-Also add a `NOTES.md` (in your own words, including the mistakes you made) and a `QUIZ.md`.
+Every new topic gets a `NOTES.md` (in my own words, including the mistakes I made) and a `QUIZ.md`.
 
 ## About
 Self-study repo — committing after each learning session.
