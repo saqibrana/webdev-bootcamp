@@ -1,7 +1,6 @@
 # JavaScript & Web Dev Bootcamp
 
-Practice code and notes from Hitesh Choudhary's full-stack 
-web development course on Udemy.
+My practice code and notes from learning full-stack web development.
 
 ## Topics Covered
 
